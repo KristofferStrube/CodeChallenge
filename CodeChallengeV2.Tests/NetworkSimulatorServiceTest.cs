@@ -11,14 +11,14 @@ namespace CodeChallengeV2.Tests
 {
     public class NetworkSimulatorServiceTest
     {
-        [Theory]
-        [JsonFileData("graph1.json")]        
-        public async void FindCritialGateways(NetworkGraph graph)
-        {
-            var res = await new NetworkSimulatorService().FindCritialGateways(graph);
+        //[Theory]
+        //[JsonFileData("graph1.json")]        
+        //public async void FindCritialGateways(NetworkGraph graph)
+        //{
+        //    var res = await new NetworkSimulatorService().FindCritialGateways(graph);
 
-            Assert.Equal("gw001", res.FirstOrDefault().Id);
-        }
+        //    Assert.Equal("gw001", res.FirstOrDefault().Id);
+        //}
 
         [Theory]
         [JsonFileData("graph2.json")]
